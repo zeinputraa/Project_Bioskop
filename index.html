@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="dist/build.css" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap");
+  </style>
+  <script src="//unpkg.com/alpinejs" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <title>BioskopGo</title>
+</head>
+
+<body>
+  <header id="header" class="sticky bg-white text-black top-0 w-full z-30" x-data="{ navOpen : false }">
+    <div x-show="navOpen" x-transition.duration.1000
+      class="absolute z-40 w-full h-screen bg-white text-black flex justify-center items-center">
+      <ul class="text-black flex flex-col items-center gap-12">
+        <li class="nav-item !text-[#B50E0E]">
+          <a href="#">Beranda</a>
+        </li>
+        <li class="nav-item"><a href="">Jadwal Film</a></li>
+        <li class="nav-item"><a href="">Pemesanan</a></li>
+        <li class="nav-item"><a href="">Tiket</a></li>
+        <li class="nav-item">
+          <a href="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+              <circle cx="40" cy="33.3333" r="10" stroke="black" stroke-width="3" stroke-linecap="round" />
+              <circle cx="40" cy="40" r="30" stroke="black" stroke-width="3" />
+              <path
+                d="M60 62.353C58.8203 58.8091 56.2208 55.6776 52.6047 53.4441C48.9886 51.2106 44.558 50 40 50C35.442 50 31.0114 51.2106 27.3953 53.4441C23.7792 55.6776 21.1797 58.8091 20 62.353"
+                stroke="black" stroke-width="3" stroke-linecap="round" />
+            </svg>
+          </a>
+        </li>
+        <button @click="navOpen = ! navOpen">
+          <i class="ri-close-line text-2xl"></i>
+        </button>
+      </ul>
+    </div>
+    <nav class="px-4 lg:px-0">
+      <div class="flex justify-between px-4 lg:px-[50px] py-4 lg:py-[20px] items-center">
+        <a href="">
+          <h1 class="font-bold text-2xl lg:text-[40px]">BioskopGo</h1>
+        </a>
+        <div class="hidden lg:block">
+          <ul class="flex font-bold text-2xl lg:gap-[50px] text-black items-center">
+            <li class="nav-item text-[#B50E0E] hover:text-[#B50E0E] transition-colors">
+              <a href="">Beranda</a>
+            </li>
+            <li class="nav-item hover:text-[#B50E0E] transition-colors">
+              <a href="/jadwal.html">Jadwal Film</a>
+            </li>
+
+            <li class="nav-item hover:text-[#B50E0E] transition-colors">
+              <a href="/pemesanan.html">Pemesanan</a>
+            </li>
+            <li class="nav-item hover:text-[#B50E0E] transition-colors">
+              <a href="/tiket.html">Tiket</a>
+            </li>
+            <li class="nav-item hover:text-[#B50E0E] transition-colors">
+              <a href="/login.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                  <circle cx="40" cy="33.3333" r="10" stroke="black" stroke-width="3" stroke-linecap="round" />
+                  <circle cx="40" cy="40" r="30" stroke="black" stroke-width="3" />
+                  <path
+                    d="M60 62.353C58.8203 58.8091 56.2208 55.6776 52.6047 53.4441C48.9886 51.2106 44.558 50 40 50C35.442 50 31.0114 51.2106 27.3953 53.4441C23.7792 55.6776 21.1797 58.8091 20 62.353"
+                    stroke="black" stroke-width="3" stroke-linecap="round" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button @click="navOpen = true" class="lg:hidden z-50 flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M13 13.5H3C2.73478 13.5 2.48043 13.6054 2.29289 13.7929C2.10536 13.9804 2 14.2348 2 14.5C2 14.7652 2.10536 15.0196 2.29289 15.2071C2.48043 15.3946 2.73478 15.5 3 15.5H13C13.2652 15.5 13.5196 15.3946 13.7071 15.2071C13.8946 15.0196 14 14.7652 14 14.5C14 14.2348 13.8946 13.9804 13.7071 13.7929C13.5196 13.6054 13.2652 13.5 13 13.5ZM21 8.5H3C2.73478 8.5 2.48043 8.60536 2.29289 8.79289C2.10536 8.98043 2 9.23478 2 9.5C2 9.76522 2.10536 10.0196 2.29289 10.2071C2.48043 10.3946 2.73478 10.5 3 10.5H21C21.2652 10.5 21.5196 10.3946 21.7071 10.2071C21.8946 10.0196 22 9.76522 22 9.5C22 9.23478 21.8946 8.98043 21.7071 8.79289C21.5196 8.60536 21.2652 8.5 21 8.5Z"
+              fill="black" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-section h-screen bg-center bg-no-repeat bg-cover relative"
+      style="background-image: url('img/hero.png')">
+      <div class="content h-full grid place-items-center bg-black bg-opacity-40 px-4 lg:px-0">
+        <div class="flex flex-col gap-10">
+          <h1 class="text-6xl text-white font-bold text-center">
+            Bioskop Arek Surabaya!
+          </h1>
+          <div class="relative">
+            <i class="ri-search-line text-white left-[5%] absolute bottom-1/2 translate-y-1/2"></i>
+            <input type="text"
+              class="bg-transparent w-full rounded-full border-4 text-white border-white placeholder:text-white px-14 py-2"
+              placeholder="cari judul film" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="md:p-16 p-4 mt-12 lg:mt-0">
+      <h2 class="text-[40px] font-bold text-center lg:text-start">
+        Sedang Tayang
+      </h2>
+      <div class="flex flex-wrap justify-center gap-[30px] mt-[58px]">
+        <a href="/movie.html" class="card-movie px-[50px] pt-3 pb-[50px] hover:bg-slate-100 transition-colors">
+          <div class="flex flex-col items-center gap-[50px]">
+            <img src="img/layangan.png" alt="" />
+            <h4 class="text-2xl font-bold">Layangan Putus The Movie</h4>
+          </div>
+        </a>
+        <a href="" class="card-movie px-[50px] pt-3 pb-[50px] hover:bg-slate-100 transition-colors">
+          <div class="flex flex-col items-center gap-[50px]">
+            <img src="img/wonka.png" alt="" />
+            <h4 class="text-2xl font-bold">Wonka</h4>
+          </div>
+        </a>
+        <a href="" class="card-movie px-[50px] pt-3 pb-[50px] hover:bg-slate-100 transition-colors">
+          <div class="flex flex-col items-center gap-[50px]">
+            <img src="img/172days.png" alt="" />
+            <h4 class="text-2xl font-bold">172 Days</h4>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section class="md:p-16 p-4 mt-12 lg:mt-0">
+      <h2 class="text-[40px] font-bold text-center lg:text-start">
+        Trailers
+      </h2>
+      <div class="flex flex-wrap justify-center gap-[30px] mt-[58px]">
+        <a href="" class="card-movie flex-grow py-[70px] hover:bg-slate-100 transition-colors">
+          <div class="flex flex-col items-center gap-[50px]">
+            <img src="img/film1.png" alt="" />
+            <h4 class="text-[30px] font-semibold uppercase">
+              Rumah masa Depan
+            </h4>
+          </div>
+        </a>
+        <a href="" class="card-movie flex-grow py-[70px] hover:bg-slate-100 transition-colors">
+          <div class="flex flex-col items-center gap-[50px]">
+            <img src="img/film2.png" alt="" />
+            <h4 class="text-[30px] font-semibold uppercase">
+              layangan putus
+            </h4>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section class="md:p-16 p-4 mt-12 lg:mt-0">
+      <h2 class="text-[40px] font-bold text-center lg:text-start">
+        Partner Kami
+      </h2>
+      <img src="img/partner.png" class="my-12" alt="" />
+    </section>
+  </main>
+
+  <footer class="bg-black text-white px-4 py-12 lg:px-[60px] lg:py-[90px]">
+    <div class="flex flex-col lg:flex-row justify-between">
+      <h1 class="text-6xl font-bold">BioskopGo</h1>
+      <div class="grid mt-20 lg:mt-0 lg:grid-cols-3 gap-12 lg:gap-[130px]">
+        <div class="flex flex-col gap-2 lg:gap-7">
+          <h5 class="text-[28px]">Layanan</h5>
+          <ul class="text-xl font-medium capitalize">
+            <li class="hover:text-slate-400 transition-colors">
+              <a href="">bantuan</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex flex-col gap-2 lg:gap-7">
+          <h5 class="text-[28px]">Tentang Kami</h5>
+          <ul class="text-xl flex flex-col gap-3 font-medium capitalize">
+            <li class="hover:text-slate-400 transition-colors">
+              <a href="">Profile</a>
+            </li>
+            <li class="hover:text-slate-400 transition-colors">
+              <a href="">Kebijakan Privasi</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex flex-col gap-2 lg:gap-7">
+          <h5 class="text-[28px]">Kontak</h5>
+          <ul class="text-xl flex flex-col gap-3 font-medium capitalize">
+            <li class="hover:text-slate-400 transition-colors">
+              <a href="" class="flex gap-1">
+                <i class="ri-whatsapp-line"></i>
+                0812345678912</a>
+            </li>
+            <li class="hover:text-slate-400 transition-colors">
+              <a href="" class="flex gap-1">
+                <i class="ri-mail-fill"></i>
+                bioskopgo@gmail.com</a>
+            </li>
+            <li class="hover:text-slate-400 transition-colors">
+              <a href="" class="flex gap-1">
+                <i class="ri-phone-fill"></i>
+                031(1234)</a>
+            </li>
+            <li class="hover:text-slate-400 transition-colors">
+              <a href="" class="flex gap-1">
+                <i class="ri-map-pin-line"></i>
+                Jl Ketintang No. 156</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr class="mt-12" />
+    <div class="flex flex-col lg:flex-row justify-between mt-12">
+      <p class="text-xl">Copyright© <a href="">BioskopGo2023</a></p>
+      <div class="flex gap-3 text-[40px]">
+        <a href=""><i class="ri-facebook-circle-fill"></i></a>
+        <a href=""><i class="ri-instagram-line"></i></a>
+        <a href=""><i class="ri-youtube-fill"></i></a>
+        <a href=""><i class="ri-tiktok-fill"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

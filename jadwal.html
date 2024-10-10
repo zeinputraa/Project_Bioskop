@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/build.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap");
+    </style>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>BioskopGo</title>
+  </head>
+  <body>
+    <main class="py-10 px-4 xl:py-20 xl:px-[90px]">
+      <h1 class="text-5xl font-bold text-center">Jadwal Film</h1>
+      <div class="wrapper">
+        <h3 class="text-[32px] font-bold mb-[72px] mt-[100px]">
+          Jadwal Tayang 1 - 7 Desember 2023
+        </h3>
+        <div class="flex flex-col gap-[50px]">
+          <!-- Card 1 -->
+          <div
+            class="card-movie w-full gap-[50px] flex flex-col xl:flex-row p-[50px] pt-2"
+          >
+            <div class="flex flex-col gap-4">
+              <div class="">
+                <img src="img/layangan.png" alt="" />
+              </div>
+              <div class="">
+                <img src="img/star4.png" alt="" />
+              </div>
+            </div>
+            <div class="flex flex-col flex-grow">
+              <h4 class="capitalize text-[28px] font-bold">
+                Layangan Putus The Movie
+              </h4>
+              <div class="flex flex-col mt-6">
+                <h6 class="text-xl font-bold">Royal Plaza</h6>
+                <div class="flex flex-col xl:flex-row justify-between">
+                  <form class="flex flex-col xl:flex-row gap-5 mt-6">
+                    <div
+                      class="flex text-xl font-bold gap-2 px-5 py-3 border rounded-[10px] checked:bg-slate-200 border-black"
+                    >
+                      <input type="radio" name="bioskop-1" id="bioskop-1" />
+                      <label for="bioskop-1">11.00</label>
+                    </div>
+                    <div
+                      class="flex text-xl font-bold gap-2 px-5 py-3 border rounded-[10px] checked:bg-slate-200 border-black"
+                    >
+                      <input type="radio" name="bioskop-1" id="bioskop-1" />
+                      <label for="bioskop-1">13.00</label>
+                    </div>
+                    <div
+                      class="flex text-xl font-bold gap-2 px-5 py-3 border rounded-[10px] checked:bg-slate-200 border-black"
+                    >
+                      <input type="radio" name="bioskop-1" id="bioskop-1" />
+                      <label for="bioskop-1">15.30</label>
+                    </div>
+                    <div
+                      class="flex text-xl font-bold gap-2 px-5 py-3 border rounded-[10px] checked:bg-slate-200 border-black"
+                    >
+                      <input type="radio" name="bioskop-1" id="bioskop-1" />
+                      <label for="bioskop-1">17.00</label>
+                    </div>
+                    <div
+                      class="flex text-xl font-bold gap-2 px-5 py-3 border rounded-[10px] checked:bg-slate-200 border-black"
+                    >
+                      <input type="radio" name="bioskop-1" id="bioskop-1" />
+                      <label for="bioskop-1">19.00</label>
+                    </div>
+                  </form>
+                  <div class="flex mt-4 xl:mt-0 flex-col gap-5">
+                    <p class="xl:self-end font-bold text-[#B50E0E]">XXI</p>
+                    <p class="text-xl font-bold">Rp 45.000</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col mt-6">
+                <h6 class="text-xl font-bold">City Of Tommorrow</h6>
+                <div class="flex flex-col xl:flex-row justify-between">
+                  <form class="flex flex-col xl:flex-row gap-5 mt-6">
+                    <div
+                      class="flex text-xl font-bold gap-2 px-5 py-3 border rounded-[10px] checked:bg-slate-200 border-black"
+                    >
+                      <input type="radio" name="bioskop-2" id="bioskop-2" />
+                      <label for="bioskop-2">11.00</label>
+                    </div>
+                    <div
+                      class="flex text-xl font-bold gap-2 px-5 py-3 border rounded-[10px] checked:bg-slate-200 border-black"
+                    >
+                      <input type="radio" name="bioskop-2" id="bioskop-2" />
+                      <label for="bioskop-2">13.00</label>
+                    </div>
+                    <div
+                      class="flex text-xl font-bold gap-2 px-5 py-3 border rounded-[10px] checked:bg-slate-200 border-black"
+                    >
+                      <input type="radio" name="bioskop-2" id="bioskop-2" />
+                      <label for="bioskop-2">15.30</label>
+                    </div>
+                    <div
+                      class="flex text-xl font-bold gap-2 px-5 py-3 border rounded-[10px] checked:bg-slate-200 border-black"
+                    >
+                      <input type="radio" name="bioskop-2" id="bioskop-2" />
+                      <label for="bioskop-2">17.00</label>
+                    </div>
+                    <div
+                      class="flex text-xl font-bold gap-2 px-5 py-3 border rounded-[10px] checked:bg-slate-200 border-black"
+                    >
+                      <input type="radio" name="bioskop-2" id="bioskop-2" />
+                      <label for="bioskop-2">19.00</label>
+                    </div>
+                  </form>
+                  <div class="flex mt-4 xl:mt-0 flex-col gap-5">
+                    <p class="xl:self-end font-bold text-[#B50E0E]">
+                      Cinepolis
+                    </p>
+                    <p class="text-xl font-bold">Rp 25.000</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col mt-6">
+                <h6 class="text-xl font-bold">Marvel City</h6>
+                <div class="flex flex-col xl:flex-row justify-between">
+                  <form class="flex flex-col xl:flex-row gap-5 mt-6">
+                    <div
+                      class="flex text-xl font-bold gap-2 px-5 py-3 border rounded-[10px] checked:bg-slate-200 border-black"
+                    >
+                      <input type="radio" name="bioskop-3" id="bioskop-3" />
+                      <label for="bioskop-3">11.00</label>
+                    </div>
+                    <div
+                      class="flex text-xl font-bold gap-2 px-5 py-3 border rounded-[10px] checked:bg-slate-200 border-black"
+                    >
+                      <input type="radio" name="bioskop-3" id="bioskop-3" />
+                      <label for="bioskop-3">13.00</label>
+                    </div>
+                    <div
+                      class="flex text-xl font-bold gap-2 px-5 py-3 border rounded-[10px] checked:bg-slate-200 border-black"
+                    >
+                      <input type="radio" name="bioskop-3" id="bioskop-3" />
+                      <label for="bioskop-3">15.30</label>
+                    </div>
+                    <div
+                      class="flex text-xl font-bold gap-2 px-5 py-3 border rounded-[10px] checked:bg-slate-200 border-black"
+                    >
+                      <input type="radio" name="bioskop-3" id="bioskop-3" />
+                      <label for="bioskop-3">17.00</label>
+                    </div>
+                    <div
+                      class="flex text-xl font-bold gap-2 px-5 py-3 border rounded-[10px] checked:bg-slate-200 border-black"
+                    >
+                      <input type="radio" name="bioskop-3" id="bioskop-3" />
+                      <label for="bioskop-3">19.00</label>
+                    </div>
+                  </form>
+                  <div class="flex mt-4 xl:mt-0 flex-col gap-5">
+                    <p class="xl:self-end font-bold text-[#B50E0E]">CGV</p>
+                    <p class="text-xl font-bold">Rp 25.000</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="card-movie w-full gap-[50px] flex flex-col xl:flex-row p-[50px] pt-2"
+          >
+            <div class="flex flex-col gap-4">
+              <div class="">
+                <img src="img/wonka.png" alt="" />
+              </div>
+              <div class="">
+                <img src="img/star4.png" alt="" />
+              </div>
+            </div>
+            <div class="flex flex-col flex-grow">
+              <h4 class="capitalize text-[28px] font-bold">Wonka</h4>
+              <div class="flex flex-col mt-6">
+                <h6 class="text-xl font-bold">Royal Plaza</h6>
+                <div class="flex flex-col xl:flex-row justify-between">
+                  <form class="flex flex-col xl:flex-row gap-5 mt-6">
+                    <div
+                      class="flex text-xl font-bold gap-2 px-5 py-3 border rounded-[10px] checked:bg-slate-200 border-black"
+                    >
+                      <input type="radio" name="bioskop-1" id="bioskop-1" />
+                      <label for="bioskop-1">12.15</label>
+                    </div>
+                    <div
+                      class="flex text-xl font-bold gap-2 px-5 py-3 border rounded-[10px] checked:bg-slate-200 border-black"
+                    >
+                      <input type="radio" name="bioskop-1" id="bioskop-1" />
+                      <label for="bioskop-1">13.30</label>
+                    </div>
+                    <div
+                      class="flex text-xl font-bold gap-2 px-5 py-3 border rounded-[10px] checked:bg-slate-200 border-black"
+                    >
+                      <input type="radio" name="bioskop-1" id="bioskop-1" />
+                      <label for="bioskop-1">15.30</label>
+                    </div>
+                  </form>
+                  <div class="flex mt-4 xl:mt-0 flex-col gap-5">
+                    <p class="xl:self-end font-bold text-[#B50E0E]">XXI</p>
+                    <p class="text-xl font-bold">Rp 45.000</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col mt-6">
+                <h6 class="text-xl font-bold">City Of Tommorrow</h6>
+                <div class="flex flex-col xl:flex-row justify-between">
+                  <form class="flex flex-col xl:flex-row gap-5 mt-6">
+                    <div
+                      class="flex text-xl font-bold gap-2 px-5 py-3 border rounded-[10px] checked:bg-slate-200 border-black"
+                    >
+                      <input type="radio" name="bioskop-2" id="bioskop-2" />
+                      <label for="bioskop-2">12.00</label>
+                    </div>
+                  </form>
+                  <div class="flex mt-4 xl:mt-0 flex-col gap-5">
+                    <p class="xl:self-end font-bold text-[#B50E0E]">
+                      Cinepolis
+                    </p>
+                    <p class="text-xl font-bold">Rp 25.000</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col mt-6">
+                <h6 class="text-xl font-bold">Marvel City</h6>
+                <div class="flex flex-col xl:flex-row justify-between">
+                  <form class="flex flex-col xl:flex-row gap-5 mt-6">
+                    <div
+                      class="flex text-xl font-bold gap-2 px-5 py-3 border rounded-[10px] checked:bg-slate-200 border-black"
+                    >
+                      <input type="radio" name="bioskop-3" id="bioskop-3" />
+                      <label for="bioskop-3">13.45</label>
+                    </div>
+                    <div
+                      class="flex text-xl font-bold gap-2 px-5 py-3 border rounded-[10px] checked:bg-slate-200 border-black"
+                    >
+                      <input type="radio" name="bioskop-3" id="bioskop-3" />
+                      <label for="bioskop-3">15.25</label>
+                    </div>
+                    <div
+                      class="flex text-xl font-bold gap-2 px-5 py-3 border rounded-[10px] checked:bg-slate-200 border-black"
+                    >
+                      <input type="radio" name="bioskop-3" id="bioskop-3" />
+                      <label for="bioskop-3">19.05</label>
+                    </div>
+                  </form>
+                  <div class="flex mt-4 xl:mt-0 flex-col gap-5">
+                    <p class="xl:self-end font-bold text-[#B50E0E]">CGV</p>
+                    <p class="text-xl font-bold">Rp 25.000</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="card-movie w-full gap-[50px] flex flex-col xl:flex-row p-[50px] pt-2"
+          >
+            <div class="flex flex-col gap-4">
+              <div class="">
+                <img src="img/172days.png" alt="" />
+              </div>
+              <div class="">
+                <img src="img/star4.png" alt="" />
+              </div>
+            </div>
+            <div class="flex flex-col flex-grow">
+              <h4 class="capitalize text-[28px] font-bold">172 Days</h4>
+              <div class="flex flex-col mt-6">
+                <h6 class="text-xl font-bold">Royal Plaza</h6>
+                <div class="flex flex-col xl:flex-row justify-between">
+                  <form class="flex flex-col xl:flex-row gap-5 mt-6">
+                    <div
+                      class="flex text-xl font-bold gap-2 px-5 py-3 border rounded-[10px] checked:bg-slate-200 border-black"
+                    >
+                      <input type="radio" name="bioskop-1" id="bioskop-1" />
+                      <label for="bioskop-1">12.15</label>
+                    </div>
+                    <div
+                      class="flex text-xl font-bold gap-2 px-5 py-3 border rounded-[10px] checked:bg-slate-200 border-black"
+                    >
+                      <input type="radio" name="bioskop-1" id="bioskop-1" />
+                      <label for="bioskop-1">14.30</label>
+                    </div>
+                    <div
+                      class="flex text-xl font-bold gap-2 px-5 py-3 border rounded-[10px] checked:bg-slate-200 border-black"
+                    >
+                      <input type="radio" name="bioskop-1" id="bioskop-1" />
+                      <label for="bioskop-1">15.30</label>
+                    </div>
+                  </form>
+                  <div class="flex mt-4 xl:mt-0 flex-col gap-5">
+                    <p class="xl:self-end font-bold text-[#B50E0E]">XXI</p>
+                    <p class="text-xl font-bold">Rp 45.000</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col mt-6">
+                <h6 class="text-xl font-bold">Marvel City</h6>
+                <div class="flex flex-col xl:flex-row justify-between">
+                  <form class="flex flex-col xl:flex-row gap-5 mt-6">
+                    <div
+                      class="flex text-xl font-bold gap-2 px-5 py-3 border rounded-[10px] checked:bg-slate-200 border-black"
+                    >
+                      <input type="radio" name="bioskop-3" id="bioskop-3" />
+                      <label for="bioskop-3">14.10</label>
+                    </div>
+                    <div
+                      class="flex text-xl font-bold gap-2 px-5 py-3 border rounded-[10px] checked:bg-slate-200 border-black"
+                    >
+                      <input type="radio" name="bioskop-3" id="bioskop-3" />
+                      <label for="bioskop-3">16.20</label>
+                    </div>
+                    <div
+                      class="flex text-xl font-bold gap-2 px-5 py-3 border rounded-[10px] checked:bg-slate-200 border-black"
+                    >
+                      <input type="radio" name="bioskop-3" id="bioskop-3" />
+                      <label for="bioskop-3">20.10</label>
+                    </div>
+                  </form>
+                  <div class="flex mt-4 xl:mt-0 flex-col gap-5">
+                    <p class="xl:self-end font-bold text-[#B50E0E]">CGV</p>
+                    <p class="text-xl font-bold">Rp 25.000</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            href=""
+            class="self-end text-2xl underline font-semibold text-[#B50E0E]"
+            >Kembali</a
+          >
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
